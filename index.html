@@ -1,0 +1,240 @@
+    <!DOCTYPE html>
+    <html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rob Derycke | Grafisch Ontwerper</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide-react/0.263.1/lucide-react.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="scss/style.css">
+
+        <script src="js/app.js"></script>
+
+    </head>
+<body class="text-slate-100">
+
+    <!-- Navigatie -->
+    <nav class="fixed w-full z-50 c-glass-card px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <span class="text-xl font-bold tracking-tighter">ROB<span class="c-text-indigo">DERYCKE</span></span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#home" class="c-nav-link">Home</a>
+                <a href="#ervaring" class="c-nav-link">Ervaring</a>
+                <a href="#vaardigheden" class="c-nav-link">Vaardigheden</a>
+                <a href="#contact" class="c-nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Sectie -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20 c-hero-pattern px-6 overflow-hidden">
+        <div class="parallax-blob w-96 h-96 bg-indigo-600 top-1/4 -left-20 parallax-layer" data-speed="0.2"></div>
+        <div class="parallax-blob w-80 h-80 bg-pink-600 bottom-1/4 -right-20 parallax-layer" data-speed="0.15"></div>
+
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 relative z-10">
+            <div class="flex-1 space-y-6 text-center md:text-left parallax-layer" data-speed="0.1">
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight">
+                    Creatieve <span class="c-gradient-text">Grafisch Ontwerper</span> & Maker.
+                </h1>
+                <p class="text-slate-400 text-lg md:text-xl max-w-xl">
+                    Gespecialiseerd in branding, webcreatie en online marketing. Ik combineer visueel inzicht met een resultaatgerichte aanpak.
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                    <a href="#contact" class="c-btn-primary px-8 py-3 rounded-full font-semibold">
+                        Laten we praten
+                    </a>
+                    <a href="https://www.behance.net/robderycke" target="_blank" class="c-glass-card hover:bg-slate-800 px-8 py-3 rounded-full font-semibold transition">
+                        Portfolio op Behance
+                    </a>
+                </div>
+            </div>
+            <div class="flex-1 flex justify-center parallax-layer" data-speed="-0.1">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <div class="absolute inset-0 bg-indigo-500 rounded-2xl rotate-6 opacity-20"></div>
+                    <img src="img/rob_derycke.jpg" 
+                         alt="[Foto van Rob Derycke]" 
+                         class="relative z-10 w-full h-full object-cover rounded-2xl border-4 border-slate-800 shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kenmerken/Specialisaties -->
+    <section class="py-20 px-6 bg-slate-950 relative" style="background-color: var(--bg-darker);">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="p-6 c-glass-card rounded-xl text-center">
+                <div class="c-text-indigo mb-4 flex justify-center"><i data-lucide="palette"></i></div>
+                <h3 class="font-bold mb-2">Branding</h3>
+                <p class="text-sm text-slate-400">Sterke visuele identiteiten die blijven hangen.</p>
+            </div>
+            <div class="p-6 c-glass-card rounded-xl text-center">
+                <div class="c-text-indigo mb-4 flex justify-center"><i data-lucide="layout"></i></div>
+                <h3 class="font-bold mb-2">Web Design</h3>
+                <p class="text-sm text-slate-400">Gebruiksvriendelijke en moderne webervaringen.</p>
+            </div>
+            <div class="p-6 c-glass-card rounded-xl text-center">
+                <div class="c-text-indigo mb-4 flex justify-center"><i data-lucide="video"></i></div>
+                <h3 class="font-bold mb-2">Video & Animatie</h3>
+                <p class="text-sm text-slate-400">Motion graphics die verhalen vertellen.</p>
+            </div>
+            <div class="p-6 c-glass-card rounded-xl text-center">
+                <div class="c-text-indigo mb-4 flex justify-center"><i data-lucide="trending-up"></i></div>
+                <h3 class="font-bold mb-2">Marketing</h3>
+                <p class="text-sm text-slate-400">Resultaatgerichte online strategieën.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opleiding & Ervaring -->
+    <section id="ervaring" class="py-20 px-6 max-w-6xl mx-auto relative">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <!-- Opleidingen -->
+            <div class="parallax-layer" data-speed="0.05">
+                <h2 class="text-3xl font-bold mb-10 flex items-center gap-3">
+                    <i data-lucide="graduation-cap" class="c-text-indigo"></i> Opleidingen
+                </h2>
+                <div class="space-y-8 border-l-2 border-slate-800 ml-4 pl-8">
+                    <div class="relative">
+                        <div class="absolute -left-[41px] top-1 w-4 h-4 rounded-full" style="background-color: var(--primary-color);"></div>
+                        <h4 class="font-bold text-lg">Online Marketing & Verkooptechnieken</h4>
+                        <p class="c-text-indigo text-sm">VDAB — dec 2025</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-slate-700"></div>
+                        <h4 class="font-bold text-lg">Web Development, Design & Video (Graduaat)</h4>
+                        <p class="c-text-indigo text-sm">Howest — 2024 - 2025</p>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -left-[41px] top-1 w-4 h-4 rounded-full bg-slate-700"></div>
+                        <h4 class="font-bold text-lg">Online & Offline Graphic Design (Graduaat)</h4>
+                        <p class="c-text-indigo text-sm">Howest — 2022 - 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Werkervaring -->
+            <div class="parallax-layer" data-speed="-0.05">
+                <h2 class="text-3xl font-bold mb-10 flex items-center gap-3">
+                    <i data-lucide="briefcase" class="c-text-indigo"></i> Werkervaring
+                </h2>
+                <div class="space-y-6">
+                    <div class="p-6 c-glass-card rounded-xl">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="font-bold text-lg">Stage Graphic Design</h4>
+                            <span class="text-xs px-2 py-1 rounded" style="background-color: rgba(99, 102, 241, 0.2); color: var(--primary-color);">2022</span>
+                        </div>
+                        <p class="text-sm font-medium mb-2">Bonte Uitgeverij (Brugge)</p>
+                        <p class="text-sm text-slate-400">Ontwerp en opmaak publicaties met Adobe InDesign.</p>
+                    </div>
+                    <div class="p-6 c-glass-card rounded-xl opacity-80 hover:opacity-100 transition">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="font-bold text-lg">Inpakker</h4>
+                            <span class="text-xs bg-slate-800 text-slate-400 px-2 py-1 rounded">2025</span>
+                        </div>
+                        <p class="text-sm font-medium mb-2">MrPackage (Oostende)</p>
+                        <p class="text-sm text-slate-400">Nauwkeurig en efficiënt werken onder tijdsdruk.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vaardigheden -->
+    <section id="vaardigheden" class="py-20 px-6" style="background-color: var(--bg-darker);">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12">Tools & Expertise</h2>
+            <!-- Grid uitgebreid naar meer kolommen voor video/foto -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-left">
+                <!-- Design -->
+                <div class="space-y-4 p-6 rounded-2xl bg-slate-900/40 border border-slate-800/50">
+                    <h3 class="text-xl font-semibold c-text-indigo flex items-center gap-2"><i data-lucide="brush"></i> Design</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="border-b border-slate-800/50 pb-1 flex justify-between">Adobe Creative Cloud <span class="text-slate-500 text-xs">Expert</span></li>
+                        <li class="border-b border-slate-800/50 pb-1 flex justify-between">Figma (UX/UI) <span class="text-slate-500 text-xs">Advanced</span></li>
+                        <li class="border-b border-slate-800/50 pb-1">Branding & Logo Design</li>
+                    </ul>
+                </div>
+                <!-- Web -->
+                <div class="space-y-4 p-6 rounded-2xl bg-slate-900/40 border border-slate-800/50">
+                    <h3 class="text-xl font-semibold c-text-indigo flex items-center gap-2"><i data-lucide="code-2"></i> Web</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="border-b border-slate-800/50 pb-1">HTML5 & CSS3 (SASS)</li>
+                        <li class="border-b border-slate-800/50 pb-1">JavaScript (ES6+)</li>
+                        <li class="border-b border-slate-800/50 pb-1">Tailwind & Bootstrap</li>
+                    </ul>
+                </div>
+                <!-- Video & Motion -->
+                <div class="space-y-4 p-6 rounded-2xl bg-slate-900/40 border border-slate-800/50">
+                    <h3 class="text-xl font-semibold c-text-indigo flex items-center gap-2"><i data-lucide="clapperboard"></i> Video & Motion</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="border-b border-slate-800/50 pb-1">After Effects (Animatie)</li>
+                        <li class="border-b border-slate-800/50 pb-1">Premiere Pro (Editing)</li>
+                        <li class="border-b border-slate-800/50 pb-1">Motion Graphics Strategy</li>
+                    </ul>
+                </div>
+                <!-- Fotografie -->
+                <div class="space-y-4 p-6 rounded-2xl bg-slate-900/40 border border-slate-800/50">
+                    <h3 class="text-xl font-semibold c-text-indigo flex items-center gap-2"><i data-lucide="camera"></i> Fotografie</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="border-b border-slate-800/50 pb-1">Beeldbewerking & Retouche</li>
+                        <li class="border-b border-slate-800/50 pb-1">Productfotografie</li>
+                        <li class="border-b border-slate-800/50 pb-1">Lightroom Workflows</li>
+                    </ul>
+                </div>
+                <!-- Marketing -->
+                <div class="space-y-4 p-6 rounded-2xl bg-slate-900/40 border border-slate-800/50">
+                    <h3 class="text-xl font-semibold c-text-indigo flex items-center gap-2"><i data-lucide="megaphone"></i> Marketing</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="border-b border-slate-800/50 pb-1">SEO & Content Strategie</li>
+                        <li class="border-b border-slate-800/50 pb-1">Social Media Marketing</li>
+                        <li class="border-b border-slate-800/50 pb-1">Google Ads Basics</li>
+                    </ul>
+                </div>
+                <!-- Soft Skills -->
+                <div class="space-y-4 p-6 rounded-2xl bg-slate-900/40 border border-slate-800/50">
+                    <h3 class="text-xl font-semibold c-text-indigo flex items-center gap-2"><i data-lucide="users"></i> Soft Skills</h3>
+                    <ul class="space-y-2 text-slate-300">
+                        <li class="border-b border-slate-800/50 pb-1">Conceptueel Denken</li>
+                        <li class="border-b border-slate-800/50 pb-1">Klantgerichte Communicatie</li>
+                        <li class="border-b border-slate-800/50 pb-1">Zelfstandig & Teamplayer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 px-6 overflow-hidden relative">
+        <div class="parallax-blob w-64 h-64 bg-indigo-500 -bottom-20 -right-20 parallax-layer" data-speed="0.3"></div>
+
+        <div class="max-w-4xl mx-auto c-glass-card rounded-3xl p-8 md:p-12 text-center relative z-10">
+            <h2 class="text-4xl font-bold mb-6">Laten we samenwerken</h2>
+            <p class="text-slate-400 mb-10 text-lg">Ik ben beschikbaar voor projecten en uitdagingen.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left max-w-2xl mx-auto">
+                <a href="mailto:rob.derycke@gmail.com" class="flex items-center gap-4 p-4 rounded-xl bg-slate-800/50 border border-slate-700 hover:border-indigo-500 transition">
+                    <div class="bg-indigo-500/20 p-3 rounded-lg c-text-indigo"><i data-lucide="mail"></i></div>
+                    <div>
+                        <p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Email</p>
+                        <p class="font-medium">rob.derycke@gmail.com</p>
+                    </div>
+                </a>
+                <a href="tel:+32472741775" class="flex items-center gap-4 p-4 rounded-xl bg-slate-800/50 border border-slate-700 hover:border-indigo-500 transition">
+                    <div class="bg-indigo-500/20 p-3 rounded-lg c-text-indigo"><i data-lucide="phone"></i></div>
+                    <div>
+                        <p class="text-xs text-slate-500 uppercase font-bold tracking-widest">Telefoon</p>
+                        <p class="font-medium">+32 472 74 17 75</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-slate-500 text-sm border-t border-slate-800">
+        <p>&copy; 2025 Rob Derycke. Grafisch Ontwerper.</p>
+    </footer>
+
+       
+    </body>
+    </html>
